@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  background-size: cover;
+  margin: 0;
+}
+
+.aboutImg {
+  background-color: cornflowerblue;
+  height: 200%;
+}
+
+.beat-hunger {
+  background-color: gray;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'My-favorite-font';
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Quicksand';
+  margin-top: 10px;
+}
+
+h3 {
+  font-family: 'Lato';
+  padding: 0;
+}
+
+h4 {
+  font-family: 'Lato';
+}
+
+p {
+  padding: 10px;
+  padding-top: 0;
+  margin: 0 10px 0.5em 10px;
+}
+
+.address {
+  font-style: unset;
+}
+
+.button {
+  background-color: #292838;
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.link1 {
+  padding-left: 0.3em;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #4b6588;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+ul#charity-list {
+  min-width: 696px;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: start;
+}
+
+.login {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: end;
+}
+
+section {
+  min-height: 200px;
+  padding: 4% 0;
+}
+
+section:nth-child(even) {
+  background-color: #b9daeb;
+}
+
+.gallery {
+width: 100%;
+margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa {
+  margin: 0 10px;
+}
+
+@font-face {
+  font-family: 'My-favorite-font';
+  src: url('CanelaBarkBoldPersonal.ttf') format('truetype'); 
+}
+
+@media only screen and (min-width: 1025px){ /*desktop*/
+
+.home {
+  /* background: url('./images/donate-food.jpg') no-repeat center center fixed; */
+  height: 100%;
+  margin-left: 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+ul#horizontal-list {
+  display: flex;
+  justify-content: center;
+  min-width: 696px;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+  font-size: 16px;
+}
+.button {
+  width: 20%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4b6588;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ul#horizontal-list {
+  display: flex;
+  justify-content: center;
+  min-width: 696px;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+  font-size: 16px;
+} 
+
+ul#horizontal-list li {
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: gray;
+}
+
+p {
+  margin: 10px 200px 20px 200px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.gallery {
+  width:100%;
+  object-fit: contain;
+}
+}
+
+@media only screen and (max-width: 1025px) { /*tablet*/
+	nav{
+		padding: 30px 20px;
+	}
+	.hamburger {
+  				position: absolute;
+  				z-index:99;
+  				color: #fff;
+  				top: 18px;
+  				right: 20px;
+  				font-size: 20px;
+  				cursor: pointer;
+}
+ul#horizontal-list {
+ 
+    position: fixed;
+    height: 100vh;
+    z-index: 999999999;
+    background: #2a465c;
+    width: 80%;
+    top: -15px;
+    right: -80%;
+}
+.close{
+	position: absolute;
+  	z-index:9999999999;
+  	color: #fff;
+  	top: 8px;
+  right: 20px;
+  display: none;
+  cursor: pointer
+}
+.close::before {
+  content: 'x'; 
+  color: #fff;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+ul#horizontal-list{
+	padding-top: 30px;
+}
+  ul#horizontal-list li{
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
