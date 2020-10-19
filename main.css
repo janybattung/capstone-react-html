@@ -13,8 +13,17 @@ body {
 }
 
 .aboutImg {
-  background-color: cornflowerblue;
   height: 200%;
+}
+
+.aboutUs {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.charity {
+  margin: 20px;
+  padding-top: 40px;
 }
 
 .beat-hunger {
@@ -22,9 +31,10 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'My-favorite-font';
   margin-bottom: 0;
+
 }
 
 h2 {
@@ -81,7 +91,7 @@ footer {
 }
 
 ul#charity-list {
-  min-width: 696px;
+  min-width: 40%;
   margin: 0 auto;
   list-style: none;
   padding-top: 20px;
@@ -100,6 +110,10 @@ nav {
   z-index: 10;
   background-color: black;
   color: white;
+}
+
+.logo-main {
+  margin-top: 60px;
 }
 
 .logo {
@@ -135,9 +149,9 @@ section {
   padding: 4% 0;
 }
 
-section:nth-child(even) {
-  background-color: #b9daeb;
-}
+/* section:nth-child(even) {
+  background-color: #b9ebca;
+} */
 
 .gallery {
 width: 100%;
@@ -169,6 +183,11 @@ margin: 0;
   /* background: url('./images/donate-food.jpg') no-repeat center center fixed; */
   height: 100%;
   margin-left: 0;
+}
+
+.charity {
+  margin-top: 60px;
+  padding-top: 40px;
 }
 
 nav {
